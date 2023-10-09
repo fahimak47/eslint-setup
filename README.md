@@ -14,23 +14,28 @@ npm init -y
 yarn init -y
 ```
 
-Now paste the config in `package.json` & save it.
+Now install eslint by using 
 
-```json
+```bash
+npm install eslint --save-dev
 
-"devDependencies": {
-        "eslint": "^7.32.0 || ^8.2.0",
-        "eslint-config-airbnb-base": "^15.0.0",
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-plugin-import": "^2.25.2",
-        "eslint-plugin-prettier": "^4.0.0",
-        "prettier": "^2.6.2"
-}
+# or
 
+yarn add -D eslint
+```
+Now install additional packages
+
+```bash
+npm install eslint-config-airbnb eslint-config-prettier eslint-plugin-prettier eslint-plugin-import prettier --save-dev
+
+#or
+
+yarn add -D eslint-config-airbnb eslint-config-prettier eslint-plugin-prettier eslint-plugin-import prettier 
 ```
 
 
-Here is an example of `package.json`
+
+Here is an example of `package.json` after installing these packages
 
 ```json
 {
@@ -60,14 +65,6 @@ Here is an example of `package.json`
 ```
 
 Again open your terminal and install dependencies with npm or yarn
-
-```bash
-npm i
-
-# or 
-
-yarn install
-```
 
 
 Now create a file named `.eslintrc.json` in your root folder.
@@ -112,3 +109,4 @@ copy the code from below and save `.eslintrc.json`
 ```
 
 You are ready to go with Eslint.
+
